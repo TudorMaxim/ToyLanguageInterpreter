@@ -8,6 +8,8 @@ public class PrgState {
     private MyIStack<IStmt> exeStack;
     private MyIDictionary<String, Integer> symTable ;
     private MyIList<Integer> out;
+    private MyIDictionary<Integer, String> fileTable;
+
     //IStmt originalProgram;
 
     public PrgState(MyIStack <IStmt> stk, MyIDictionary <String, Integer> dict, MyIList <Integer> list, IStmt prg) {
@@ -28,13 +30,14 @@ public class PrgState {
     }
 
     public String toString() {
-        String ret = "EXE STACK: \n";
-        ret += exeStack.toString();
-        ret += "\nSym Table: \n";
-        ret += symTable.toString();
-        ret += "\nOut: \n";
-        ret += out.toString() + "\n";
-        return ret;
+        StringBuilder builder = new StringBuilder();
+        builder.append("Exe Stack:\n");
+        builder.append(exeStack.toString());
+        builder.append("Sym Table:\n");
+        builder.append(symTable.toString());
+        builder.append("Out:\n");
+        builder.append(out.toString());
+        return builder.toString();
     }
 
 }

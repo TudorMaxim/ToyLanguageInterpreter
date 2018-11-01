@@ -38,6 +38,13 @@ public class MyDictionary <K,V> implements MyIDictionary<K, V> {
     }
 
     public String toString() {
-        return Arrays.toString(D.entrySet().toArray());
+        StringBuilder builder = new StringBuilder();
+        for (HashMap.Entry<K, V> e : D.entrySet()) {
+            builder.append(e.getKey().toString());
+            builder.append(" --> ");
+            builder.append(e.getValue().toString());
+            builder.append("\n");
+        }
+        return builder.toString();
     }
 }

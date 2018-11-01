@@ -21,7 +21,7 @@ public class AssignStmt implements IStmt {
     }
 
     public String toString() {
-        return name.toString() + " = " + expr.toString();
+        return name.toString() + " = " + expr.toString() + "; ";
     }
 
 //    public IStmt duplicate() {

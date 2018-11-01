@@ -20,4 +20,8 @@ public class Repo implements IRepo{
     public PrgState getCurrentProgram() {
         return prgStates.get(0);
     }
+
+    public void logPrgStateExec() {
+
+    }
 }

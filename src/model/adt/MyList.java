@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class MyList<T> implements MyIList<T>, Iterable<T> {
-    ArrayList <T> V;
+    private ArrayList <T> V;
     public MyList() {
         V = new ArrayList<T>();
     }
@@ -64,10 +64,11 @@ public class MyList<T> implements MyIList<T>, Iterable<T> {
     }
 
     public String toString() {
-        String ret = "";
+        StringBuilder builder = new StringBuilder();
         for (T e : V) {
-            ret += e.toString();
+            builder.append(e.toString());
+            builder.append("\n");
         }
-        return ret;
+        return builder.toString();
     }
 }

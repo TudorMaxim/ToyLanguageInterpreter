@@ -15,7 +15,7 @@ public class CondStmt implements IStmt {
     }
 
     public String toString() {
-        return "if (" + expr.toString() + ") then " + Then.toString() + " else " + Else.toString() + " end ";
+        return "if (" + expr.toString() + ") then " + Then.toString() + "else " + Else.toString() + "end ";
     }
 
     public PrgState execute(PrgState state) throws Exception{

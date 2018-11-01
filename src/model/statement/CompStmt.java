@@ -19,7 +19,7 @@ public class CompStmt implements IStmt {
         return state;
     }
     public String toString() {
-        return first + " " + second;
+        return first + " " + second + " ";
     }
 
 //    public IStmt duplicate() {

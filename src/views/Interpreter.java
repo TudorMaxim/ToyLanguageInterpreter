@@ -18,7 +18,7 @@ import java.util.Scanner;
 
 public class Interpreter {
 
-    public static void menu() {
+    private static void menu() {
         System.out.println("Choose one of the programs");
         System.out.println("0 -> Exit");
         System.out.println("1 -> v = 2; Print(v);");

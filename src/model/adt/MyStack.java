@@ -38,6 +38,12 @@ public class MyStack <T> implements MyIStack<T> {
 //    }
 
     public String toString() {
-        return Arrays.toString(stk.toArray());
+        Object[] arr = stk.toArray();
+        int left = 0, right = arr.length - 1;
+        String ret  = "";
+        for (int i = arr.length - 1; i >= 0; i--) {
+            ret += arr[i].toString() + "\n";
+        }
+        return ret;
     }
 }
