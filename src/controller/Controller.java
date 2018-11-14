@@ -25,6 +25,7 @@ public class Controller {
         while (!exeStack.empty()) {
             oneStep(program);
             System.out.println(program.toString());
+            repo.logPrgStateExec(program);
         }
     }
 }

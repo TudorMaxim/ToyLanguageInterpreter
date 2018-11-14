@@ -1,7 +1,7 @@
 package model.adt;
 import model.interfaces.MyIDictionary;
 
-import java.util.Arrays;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Set;
 
@@ -25,12 +25,15 @@ public class MyDictionary <K,V> implements MyIDictionary<K, V> {
     public void put(K key, V value) {
         D.put(key, value);
     }
-    public void remove(K key) {
-        D.remove(key);
+    public V remove(K key) {
+        return D.remove(key);
     }
 
     public Set<K> getKeys() {
         return D.keySet();
+    }
+    public Collection<V> getValues() {
+        return D.values();
     }
 
     public int size() {
@@ -38,13 +41,6 @@ public class MyDictionary <K,V> implements MyIDictionary<K, V> {
     }
 
     public String toString() {
-        StringBuilder builder = new StringBuilder();
-        for (HashMap.Entry<K, V> e : D.entrySet()) {
-            builder.append(e.getKey().toString());
-            builder.append(" --> ");
-            builder.append(e.getValue().toString());
-            builder.append("\n");
-        }
-        return builder.toString();
+        return D.entrySet().stream().map(entry -> entry.getKey() + " --> " + entry.getValue() + "\n").reduce("", (acc, entry) -> acc + entry);
     }
 }

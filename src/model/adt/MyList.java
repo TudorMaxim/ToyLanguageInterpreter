@@ -64,11 +64,6 @@ public class MyList<T> implements MyIList<T>, Iterable<T> {
     }
 
     public String toString() {
-        StringBuilder builder = new StringBuilder();
-        for (T e : V) {
-            builder.append(e.toString());
-            builder.append("\n");
-        }
-        return builder.toString();
+        return V.stream().map(e -> e.toString() + "\n").reduce("", (acc, e) -> acc + e);
     }
 }

@@ -2,6 +2,8 @@ package model.adt;
 import model.interfaces.MyIStack;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.Stack;
 
 public class MyStack <T> implements MyIStack<T> {
@@ -39,11 +41,8 @@ public class MyStack <T> implements MyIStack<T> {
 
     public String toString() {
         Object[] arr = stk.toArray();
-        int left = 0, right = arr.length - 1;
-        String ret  = "";
-        for (int i = arr.length - 1; i >= 0; i--) {
-            ret += arr[i].toString() + "\n";
-        }
-        return ret;
+        List<Object> L = Arrays.asList(arr);
+        Collections.reverse(L);
+        return L.stream().map(e -> e.toString() + "\n").reduce("", (acc, e) -> acc + e);
     }
 }
