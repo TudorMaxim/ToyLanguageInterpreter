@@ -1,16 +1,17 @@
 package model.commands;
 
 public abstract class Command {
-    private String key, description;
+    private String description;
+    private Integer key;
 
-    public Command(String key, String description) {
+    public Command(Integer key, String description) {
         this.key = key;
         this.description = description;
     }
 
     public abstract void execute();
 
-    public String getKey() {
+    public Integer getKey() {
         return key;
     }
 

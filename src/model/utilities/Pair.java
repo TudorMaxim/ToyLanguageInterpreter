@@ -1,4 +1,4 @@
-package model;
+package model.utilities;
 
 public class Pair <X, Y> {
     private X first;

@@ -1,33 +1,127 @@
 ExeStack:
-openRFile(var_f, test.in)
-readFile(var_f + 2, var_c) print(var_c);  if (var_c) then readFile(var_f, var_c) print(var_c);  else print(0); end  closeRFile(var_f)   
+x = 1; 
+new(v, 20) new(a, 22) print(x);  print(v);    
 
 SymTable:
 
 Out:
 
 FileTable:
+
+Heap:
 
 ExeStack:
-readFile(var_f + 2, var_c) print(var_c);  if (var_c) then readFile(var_f, var_c) print(var_c);  else print(0); end  closeRFile(var_f)   
+new(v, 20) new(a, 22) print(x);  print(v);    
 
 SymTable:
-var_f --> 1
+x --> 1
 
 Out:
 
 FileTable:
-1 --> test.in
+
+Heap:
 
 ExeStack:
-readFile(var_f + 2, var_c)
-print(var_c);  if (var_c) then readFile(var_f, var_c) print(var_c);  else print(0); end  closeRFile(var_f)  
+new(v, 20)
+new(a, 22) print(x);  print(v);   
 
 SymTable:
-var_f --> 1
+x --> 1
 
 Out:
 
 FileTable:
-1 --> test.in
 
+Heap:
+
+ExeStack:
+new(a, 22) print(x);  print(v);   
+
+SymTable:
+v --> 1
+x --> 1
+
+Out:
+
+FileTable:
+
+Heap:
+1 -> 20
+ExeStack:
+new(a, 22)
+print(x);  print(v);  
+
+SymTable:
+v --> 1
+x --> 1
+
+Out:
+
+FileTable:
+
+Heap:
+1 -> 20
+ExeStack:
+print(x);  print(v);  
+
+SymTable:
+a --> 2
+v --> 1
+x --> 1
+
+Out:
+
+FileTable:
+
+Heap:
+1 -> 20
+2 -> 22
+ExeStack:
+print(x); 
+print(v); 
+
+SymTable:
+a --> 2
+v --> 1
+x --> 1
+
+Out:
+
+FileTable:
+
+Heap:
+1 -> 20
+2 -> 22
+ExeStack:
+print(v); 
+
+SymTable:
+a --> 2
+v --> 1
+x --> 1
+
+Out:
+1
+
+FileTable:
+
+Heap:
+1 -> 20
+2 -> 22
+ExeStack:
+
+SymTable:
+a --> 2
+v --> 1
+x --> 1
+
+Out:
+1
+1
+
+FileTable:
+
+Heap:
+1 -> 20
+2 -> 22

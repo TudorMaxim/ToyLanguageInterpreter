@@ -1,7 +1,9 @@
 package model.expression;
 
 import model.exceptions.ExprException;
+import model.interfaces.IExpression;
 import model.interfaces.MyIDictionary;
+import model.interfaces.MyIHeap;
 
 public class ArithmExpr implements IExpression {
     private char operator;
@@ -12,18 +14,18 @@ public class ArithmExpr implements IExpression {
         this.operand2 = operand2;
         this.operator = operator;
     }
-    public int eval(MyIDictionary <String, Integer> symTable) throws Exception{
+    public int eval(MyIDictionary <String, Integer> symTable, MyIHeap<Integer> heap) throws Exception{
         if (operator == '+') {
-            return operand1.eval(symTable) + operand2.eval(symTable);
+            return operand1.eval(symTable, heap) + operand2.eval(symTable, heap);
         } else if (operator == '-') {
-            return operand1.eval(symTable) - operand2.eval(symTable);
+            return operand1.eval(symTable, heap) - operand2.eval(symTable, heap);
         } else if (operator == '*') {
-            return operand1.eval(symTable) * operand2.eval(symTable);
+            return operand1.eval(symTable, heap) * operand2.eval(symTable, heap);
         } else if (operator == '/') {
-            if (operand2.eval(symTable) == 0) {
+            if (operand2.eval(symTable, heap) == 0) {
                 throw (new ExprException("Error: Division by 0"));
             }
-            return operand1.eval(symTable) / operand2.eval(symTable);
+            return operand1.eval(symTable, heap) / operand2.eval(symTable, heap);
         } else {
             throw new ExprException("Undefined operator " + operator);
         }

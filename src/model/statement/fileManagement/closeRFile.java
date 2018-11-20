@@ -1,8 +1,9 @@
-package model.statement;
+package model.statement.fileManagement;
 
-import model.Pair;
+import model.utilities.Pair;
 import model.PrgState;
-import model.expression.IExpression;
+import model.interfaces.IExpression;
+import model.interfaces.IStmt;
 
 import java.io.BufferedReader;
 
@@ -18,7 +19,7 @@ public class closeRFile implements IStmt {
     }
 
     public PrgState execute(PrgState state) throws Exception {
-        int fileDescriptor = this.expression.eval(state.getSymTable());
+        int fileDescriptor = this.expression.eval(state.getSymTable(), state.getHeap());
         Pair <String, BufferedReader> removedFile = state.getFileTable().remove(fileDescriptor);
         if(removedFile == null)
             throw new Exception("FileNotOpened Exception at: " + this.toString() + "\nThere is no opened file with fd = " + fileDescriptor);

@@ -1,5 +1,7 @@
 package model.expression;
+import model.interfaces.IExpression;
 import model.interfaces.MyIDictionary;
+import model.interfaces.MyIHeap;
 
 public class ConstExpr implements IExpression {
     private Integer value;
@@ -8,7 +10,7 @@ public class ConstExpr implements IExpression {
         this.value = value;
     }
 
-    public int eval(MyIDictionary <String, Integer> symTable) {
+    public int eval(MyIDictionary <String, Integer> symTable, MyIHeap<Integer> heap) {
         return value;
     }
 

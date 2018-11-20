@@ -1,7 +1,8 @@
-package model.statement;
+package model.statement.basic;
 
 import model.PrgState;
 import model.interfaces.MyIStack;
+import model.interfaces.IStmt;
 
 public class CompStmt implements IStmt {
     private IStmt first;

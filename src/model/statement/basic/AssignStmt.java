@@ -1,8 +1,9 @@
-package model.statement;
+package model.statement.basic;
 
 import model.PrgState;
-import model.expression.IExpression;
+import model.interfaces.IExpression;
 import model.interfaces.MyIDictionary;
+import model.interfaces.IStmt;
 
 public class AssignStmt implements IStmt {
     String name;
@@ -15,7 +16,7 @@ public class AssignStmt implements IStmt {
 
     public PrgState execute(PrgState state) throws Exception{
         MyIDictionary <String, Integer> symTable = state.getSymTable();
-        Integer ans = this.expr.eval(symTable);
+        Integer ans = this.expr.eval(symTable, state.getHeap());
         symTable.put(this.name, ans);
         return state;
     }

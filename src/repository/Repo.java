@@ -58,6 +58,8 @@ public class Repo implements IRepo{
         this.printWriter.println(state.getOut().toString());
         this.printWriter.println("FileTable:");
         this.printWriter.println(state.getFileTable().toString());
+        this.printWriter.println("Heap:");
+        this.printWriter.println(state.getHeap().toString());
         this.printWriter.close();
     }
 }

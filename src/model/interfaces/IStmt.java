@@ -1,7 +1,6 @@
-package model.statement;
+package model.interfaces;
 
 import model.PrgState;
-import model.expression.IExpression;
 
 public interface IStmt {
     String toString();

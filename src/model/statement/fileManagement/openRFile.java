@@ -1,6 +1,8 @@
-package model.statement;
-import model.Pair;
+package model.statement.fileManagement;
+import model.utilities.Pair;
 import model.PrgState;
+import model.interfaces.IStmt;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;

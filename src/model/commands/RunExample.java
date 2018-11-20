@@ -4,7 +4,7 @@ import controller.Controller;
 
 public class RunExample extends Command {
     private Controller ctrl;
-    public RunExample(String key, String description, Controller ctrl) {
+    public RunExample(Integer key, String description, Controller ctrl) {
         super(key, description);
         this.ctrl = ctrl;
     }

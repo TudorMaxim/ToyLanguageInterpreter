@@ -2,7 +2,7 @@ package model.commands;
 
 public class ExitCommand extends Command {
 
-    public ExitCommand(String key, String desc){
+    public ExitCommand(Integer key, String desc){
         super(key, desc);
     }
 

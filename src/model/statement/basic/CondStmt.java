@@ -1,7 +1,8 @@
-package model.statement;
+package model.statement.basic;
 import model.PrgState;
-import model.expression.IExpression;
+import model.interfaces.IExpression;
 import model.interfaces.MyIStack;
+import model.interfaces.IStmt;
 
 public class CondStmt implements IStmt {
     private IExpression expr;
@@ -20,7 +21,7 @@ public class CondStmt implements IStmt {
 
     public PrgState execute(PrgState state) throws Exception{
         MyIStack <IStmt> exeStack = state.getExeStack();
-        if (this.expr.eval(state.getSymTable()) != 0) {
+        if (this.expr.eval(state.getSymTable(), state.getHeap()) != 0) {
             exeStack.push(Then);
         } else {
             exeStack.push(Else);
@@ -32,3 +33,4 @@ public class CondStmt implements IStmt {
 //        return new CondStmt(expr.duplicate(), Then.duplicate(), Else.duplicate());
 //    }
 }
+//

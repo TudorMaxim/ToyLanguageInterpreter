@@ -3,21 +3,13 @@ import model.interfaces.MyIDictionary;
 
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 
 public class MyDictionary <K,V> implements MyIDictionary<K, V> {
-    HashMap <K, V> D;
+    Map <K, V> D;
     public MyDictionary() {
         D = new HashMap<K,V>();
-    }
-    public MyDictionary(HashMap<K,V> D) {
-        this.D = D;
-    }
-    public HashMap<K, V> getDictionary() {
-        return D;
-    }
-    public void setDictionary(HashMap<K, V> d) {
-        D = d;
     }
     public V get(K key) {
         return D.get(key);
@@ -40,6 +32,13 @@ public class MyDictionary <K,V> implements MyIDictionary<K, V> {
         return D.size();
     }
 
+    public void setContent(Map <K,V> map) {
+        this.D = map;
+    }
+
+    public Map <K,V> getContent() {
+        return this.D;
+    }
     public String toString() {
         return D.entrySet().stream().map(entry -> entry.getKey() + " --> " + entry.getValue() + "\n").reduce("", (acc, entry) -> acc + entry);
     }
