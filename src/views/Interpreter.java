@@ -282,6 +282,38 @@ public class Interpreter {
         IRepo repository11 = new Repo(program11, "result.out");
         Controller ctrl11 = new Controller(repository11);
 
+        //v=10;new(v,20);new(a,22);wH(a,30);print(a);print(rH(a)); a=0
+        IStmt ex12 = new CompStmt(
+                new AssignStmt("v", new ConstExpr(10)),
+                new CompStmt(
+                        new New("v", new ConstExpr(20)),
+                        new CompStmt(
+                                new New("a", new ConstExpr(22)),
+                                new CompStmt(
+                                        new WriteHeap(
+                                                "a",
+                                                new ConstExpr(30)
+                                        ),
+                                        new CompStmt(
+                                                new PrintStmt(new VarExpr("a")),
+                                                new CompStmt(
+                                                        new PrintStmt(new ReadHeap("a")),
+                                                        new AssignStmt("a", new ConstExpr(0))
+                                                )
+                                        )
+                                )
+                        )
+                )
+        );
+        MyIStack<IStmt> exeStack12 = new MyStack<>();
+        MyIDictionary<String, Integer> symTable12 = new MyDictionary<>();
+        MyIList<Integer> out12 = new MyList<>();
+        MyIDictionary <Integer, Pair<String, BufferedReader>> fileTable12 = new MyDictionary<>();
+        MyIHeap <Integer> Heap12 = new MyHeap<>(new HashMap<>());
+        PrgState program12 = new PrgState(exeStack12, symTable12, out12, fileTable12, Heap12, ex12);
+        IRepo repository12 = new Repo(program12, "result.out");
+        Controller ctrl12 = new Controller(repository12);
+
         TextMenu menu = new TextMenu();
         menu.addCommand(new ExitCommand(0, "exit"));
         menu.addCommand(new RunExample(1, ex1.toString(), ctrl1));
@@ -295,6 +327,7 @@ public class Interpreter {
         menu.addCommand(new RunExample(9, ex9.toString(), ctrl9));
         menu.addCommand(new RunExample(10, ex10.toString(), ctrl10));
         menu.addCommand(new RunExample(11, ex11.toString(), ctrl11));
+        menu.addCommand(new RunExample(12, ex12.toString(), ctrl12));
         menu.show();
     }
 }

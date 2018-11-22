@@ -1,6 +1,6 @@
 ExeStack:
-x = 1; 
-new(v, 20) new(a, 22) print(x);  print(v);    
+v = 10; 
+new(v, 20) new(a, 22) writeHeap(a, 30) print(a);  print(readHeap(a));  a = 0;      
 
 SymTable:
 
@@ -11,10 +11,10 @@ FileTable:
 Heap:
 
 ExeStack:
-new(v, 20) new(a, 22) print(x);  print(v);    
+new(v, 20) new(a, 22) writeHeap(a, 30) print(a);  print(readHeap(a));  a = 0;      
 
 SymTable:
-x --> 1
+v --> 10
 
 Out:
 
@@ -24,10 +24,10 @@ Heap:
 
 ExeStack:
 new(v, 20)
-new(a, 22) print(x);  print(v);   
+new(a, 22) writeHeap(a, 30) print(a);  print(readHeap(a));  a = 0;     
 
 SymTable:
-x --> 1
+v --> 10
 
 Out:
 
@@ -36,11 +36,10 @@ FileTable:
 Heap:
 
 ExeStack:
-new(a, 22) print(x);  print(v);   
+new(a, 22) writeHeap(a, 30) print(a);  print(readHeap(a));  a = 0;     
 
 SymTable:
 v --> 1
-x --> 1
 
 Out:
 
@@ -50,11 +49,10 @@ Heap:
 1 -> 20
 ExeStack:
 new(a, 22)
-print(x);  print(v);  
+writeHeap(a, 30) print(a);  print(readHeap(a));  a = 0;    
 
 SymTable:
 v --> 1
-x --> 1
 
 Out:
 
@@ -63,12 +61,11 @@ FileTable:
 Heap:
 1 -> 20
 ExeStack:
-print(x);  print(v);  
+writeHeap(a, 30) print(a);  print(readHeap(a));  a = 0;    
 
 SymTable:
 a --> 2
 v --> 1
-x --> 1
 
 Out:
 
@@ -78,13 +75,12 @@ Heap:
 1 -> 20
 2 -> 22
 ExeStack:
-print(x); 
-print(v); 
+writeHeap(a, 30)
+print(a);  print(readHeap(a));  a = 0;   
 
 SymTable:
 a --> 2
 v --> 1
-x --> 1
 
 Out:
 
@@ -94,34 +90,92 @@ Heap:
 1 -> 20
 2 -> 22
 ExeStack:
-print(v); 
+print(a);  print(readHeap(a));  a = 0;   
 
 SymTable:
 a --> 2
 v --> 1
-x --> 1
 
 Out:
-1
 
 FileTable:
 
 Heap:
 1 -> 20
-2 -> 22
+2 -> 30
+ExeStack:
+print(a); 
+print(readHeap(a));  a = 0;  
+
+SymTable:
+a --> 2
+v --> 1
+
+Out:
+
+FileTable:
+
+Heap:
+1 -> 20
+2 -> 30
+ExeStack:
+print(readHeap(a));  a = 0;  
+
+SymTable:
+a --> 2
+v --> 1
+
+Out:
+2
+
+FileTable:
+
+Heap:
+1 -> 20
+2 -> 30
+ExeStack:
+print(readHeap(a)); 
+a = 0; 
+
+SymTable:
+a --> 2
+v --> 1
+
+Out:
+2
+
+FileTable:
+
+Heap:
+1 -> 20
+2 -> 30
+ExeStack:
+a = 0; 
+
+SymTable:
+a --> 2
+v --> 1
+
+Out:
+2
+30
+
+FileTable:
+
+Heap:
+1 -> 20
+2 -> 30
 ExeStack:
 
 SymTable:
-a --> 2
+a --> 0
 v --> 1
-x --> 1
 
 Out:
-1
-1
+2
+30
 
 FileTable:
 
 Heap:
 1 -> 20
-2 -> 22

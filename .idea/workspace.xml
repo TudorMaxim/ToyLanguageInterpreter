@@ -2,54 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53f39749-fac8-4679-855b-a9976dddeb70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/model/adt/MyHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/interfaces/MyIHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/statement/heapManagement/New.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/statement/heapManagement/ReadHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/statement/heapManagement/WriteHeap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.out" beforeDir="false" afterPath="$PROJECT_DIR$/log.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/model/Pair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/model/PrgState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/model/PrgState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/model/expression/ArithmExpr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/model/expression/ConstExpr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/model/expression/IExpression.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/model/expression/VarExpr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/model/statement/AssignStmt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/model/statement/CompStmt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/model/statement/CondStmt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/model/statement/IStmt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/model/statement/PrintStmt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/model/statement/closeRFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/model/statement/openRFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/model/statement/readFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/views/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/views/Interpreter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/views/TextMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/views/TextMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result.out" beforeDir="false" afterPath="$PROJECT_DIR$/result.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Pair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/utilities/Pair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/PrgState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/PrgState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/adt/MyDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/adt/MyDictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/commands/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/commands/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/commands/ExitCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/commands/RunExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/commands/RunExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/expression/ArithmExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/expression/ArithmExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/expression/ConstExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/expression/ConstExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/expression/IExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/interfaces/IExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/expression/VarExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/expression/VarExpr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/interfaces/MyIDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/interfaces/MyIDictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/statement/AssignStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/statement/basic/AssignStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/statement/CompStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/statement/basic/CompStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/statement/CondStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/statement/basic/CondStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/statement/IStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/interfaces/IStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/statement/PrintStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/statement/basic/PrintStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/statement/closeRFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/statement/fileManagement/closeRFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/statement/openRFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/statement/fileManagement/openRFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/statement/readFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/statement/fileManagement/readFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/Repo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/Repo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/TextMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/TextMenu.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,14 +17,15 @@
     <session id="1073869711">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.26" value="2" />
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -91,12 +47,12 @@
         <counts>
           <entry key="dummy" value="6" />
           <entry key="in" value="11" />
-          <entry key="java" value="17687" />
+          <entry key="java" value="17806" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="17687" />
+          <entry key="JAVA" value="17806" />
           <entry key="PLAIN_TEXT" value="17" />
         </counts>
       </usages-collector>
@@ -104,11 +60,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/Interpreter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="296" column="41" selection-start-line="296" selection-start-column="41" selection-end-line="296" selection-end-column="41" />
+            <state relative-caret-position="504">
+              <caret line="330" column="20" lean-forward="true" selection-start-line="330" selection-start-column="20" selection-end-line="330" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/result.out">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+            <state relative-caret-position="986">
+              <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -128,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+            <state relative-caret-position="463">
+              <caret line="35" column="40" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,7 +96,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/interfaces/MyIDictionary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="204">
               <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -152,7 +108,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/adt/MyHeap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="612">
               <caret line="47" selection-start-line="47" selection-end-line="47" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -160,10 +116,6 @@
                 <element signature="e#516#517#0" expanded="true" />
                 <element signature="e#578#579#0" expanded="true" />
                 <element signature="e#620#621#0" expanded="true" />
-                <element signature="e#1309#1310#0" expanded="true" />
-                <element signature="e#1333#1334#0" expanded="true" />
-                <element signature="e#1390#1391#0" expanded="true" />
-                <element signature="e#1421#1422#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -173,22 +125,18 @@
         <entry file="file://$PROJECT_DIR$/src/model/interfaces/MyIHeap.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/adt/MyDictionary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="289">
               <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#951#952#0" expanded="true" />
-                <element signature="e#978#979#0" expanded="true" />
-                <element signature="e#807#808#0" expanded="true" />
-                <element signature="e#830#831#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -260,17 +208,17 @@
         <option value="$PROJECT_DIR$/src/model/commands/ExitCommand.java" />
         <option value="$PROJECT_DIR$/src/model/commands/RunExample.java" />
         <option value="$PROJECT_DIR$/src/views/TextMenu.java" />
-        <option value="$PROJECT_DIR$/src/views/Interpreter.java" />
-        <option value="$PROJECT_DIR$/src/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/model/interfaces/MyIHeap.java" />
         <option value="$PROJECT_DIR$/src/model/adt/MyHeap.java" />
         <option value="$PROJECT_DIR$/src/model/interfaces/MyIDictionary.java" />
         <option value="$PROJECT_DIR$/src/model/adt/MyDictionary.java" />
+        <option value="$PROJECT_DIR$/src/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/src/views/Interpreter.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="177" />
+    <option name="x" value="176" />
     <option name="y" value="190" />
     <option name="width" value="1750" />
     <option name="height" value="970" />
@@ -283,8 +231,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -388,7 +336,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Semestrul_3/MAP/ToyLanguageInterpreter/src/repository/Repo.java&#10;repo&#9;null&#9;null&#10;clos&#9;FILE&#9;file://D:/Semestrul_3/MAP/ToyLanguageInterpreter/src/model/statement/closeRFile.java&#10;readFIle&#9;FILE&#9;file://D:/Semestrul_3/MAP/ToyLanguageInterpreter/src/model/statement/readFile.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542753861155" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542882104109" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/result.out" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -462,7 +410,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.18322147" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.18590604" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32907802" />
       <window_info anchor="bottom" id="Inspection Results" order="1" weight="0.32907802" />
@@ -471,7 +419,7 @@
       <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.3531915" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.3531915" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -523,11 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="66" column="54" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1247#1248#0" expanded="true" />
-            <element signature="e#1335#1336#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -556,11 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#135#136#0" expanded="true" />
-            <element signature="e#173#174#0" expanded="true" />
-            <element signature="e#250#251#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -582,9 +520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -592,16 +527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#722#723#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -630,9 +555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -647,9 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="19" column="86" selection-start-line="19" selection-start-column="86" selection-end-line="19" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -657,9 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -674,9 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -684,9 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -694,9 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="21" column="86" selection-start-line="21" selection-start-column="86" selection-end-line="21" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -704,11 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="60" column="39" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#877#878#0" expanded="true" />
-            <element signature="e#921#922#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -716,9 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -726,9 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -736,9 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -746,9 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -770,16 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -787,9 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="48" column="55" lean-forward="true" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -800,54 +677,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Interpreter.java">
+    <entry file="file://$PROJECT_DIR$/result.out">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="296" column="41" selection-start-line="296" selection-start-column="41" selection-end-line="296" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/interfaces/MyIHeap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/adt/MyHeap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#474#475#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#1309#1310#0" expanded="true" />
-            <element signature="e#1333#1334#0" expanded="true" />
-            <element signature="e#1390#1391#0" expanded="true" />
-            <element signature="e#1421#1422#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="986">
+          <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/interfaces/MyIDictionary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="204">
           <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -855,16 +694,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/adt/MyHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/interfaces/MyIHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/adt/MyDictionary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="289">
           <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#951#952#0" expanded="true" />
-            <element signature="e#978#979#0" expanded="true" />
-            <element signature="e#807#808#0" expanded="true" />
-            <element signature="e#830#831#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="35" column="40" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/Interpreter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="330" column="20" lean-forward="true" selection-start-line="330" selection-start-column="20" selection-end-line="330" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
