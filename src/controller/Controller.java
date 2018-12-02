@@ -3,7 +3,10 @@ package controller;
 import model.PrgState;
 import model.interfaces.MyIStack;
 import model.interfaces.IStmt;
+import model.utilities.Pair;
 import repository.IRepo;
+
+import java.io.IOException;
 import java.util.Collection;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -28,16 +31,28 @@ public class Controller {
         return currentState.execute(program);
     }
 
-    public void allSteps() throws Exception {
+    public void allSteps() {
         PrgState program = repo.getCurrentProgram();
         MyIStack <IStmt> exeStack = program.getExeStack();
-        while (!exeStack.empty()) {
-            oneStep(program);
-            program.getHeap().setContent(conservativeGarbageCollector(
-                    program.getSymTable().getContent().values(),
-                    program.getHeap().getContent()));
-            System.out.println(program.toString());
-            repo.logPrgStateExec(program);
+        try {
+            while (!exeStack.empty()) {
+                oneStep(program);
+                program.getHeap().setContent(conservativeGarbageCollector(
+                        program.getSymTable().getContent().values(),
+                        program.getHeap().getContent()));
+                System.out.println(program.toString());
+                repo.logPrgStateExec(program);
+            }
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        } finally {
+            program.getFileTable().getValues().stream().map(Pair::getSecond).forEach(bufferedReader -> {
+                try {
+                    bufferedReader.close();
+                } catch (IOException ex) {
+                    System.out.println(ex.getMessage());
+                }
+            });
         }
     }
 }

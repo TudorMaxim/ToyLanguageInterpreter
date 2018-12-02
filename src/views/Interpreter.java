@@ -1,7 +1,9 @@
 package views;
 import controller.Controller;
 import model.adt.MyHeap;
+import model.expression.BooleanExpr;
 import model.interfaces.*;
+import model.statement.basic.*;
 import model.statement.heapManagement.New;
 import model.statement.heapManagement.ReadHeap;
 import model.statement.heapManagement.WriteHeap;
@@ -15,10 +17,6 @@ import model.commands.RunExample;
 import model.expression.ArithmExpr;
 import model.expression.ConstExpr;
 import model.expression.VarExpr;
-import model.statement.basic.AssignStmt;
-import model.statement.basic.CompStmt;
-import model.statement.basic.CondStmt;
-import model.statement.basic.PrintStmt;
 import model.statement.fileManagement.closeRFile;
 import model.statement.fileManagement.openRFile;
 import model.statement.fileManagement.readFile;
@@ -314,6 +312,36 @@ public class Interpreter {
         IRepo repository12 = new Repo(program12, "result.out");
         Controller ctrl12 = new Controller(repository12);
 
+        //v=6; (while (v-4) print(v);v=v-1);print(v)
+        IStmt ex13 = new CompStmt(
+                new AssignStmt("v", new ConstExpr(6)),
+                new CompStmt(
+                        new WhileStmt(
+                                new BooleanExpr(
+                                        new ArithmExpr(new VarExpr("v"), '-', new ConstExpr(4)),
+                                        "!=",
+                                        new ConstExpr(0)
+                                ),
+                                new CompStmt(
+                                        new PrintStmt(new VarExpr("v")),
+                                        new AssignStmt(
+                                                "v",
+                                                new ArithmExpr(new VarExpr("v"), '-', new ConstExpr(1))
+                                        )
+                                )
+                        ),
+                        new PrintStmt(new VarExpr("v"))
+                )
+        );
+        MyIStack<IStmt> exeStack13 = new MyStack<>();
+        MyIDictionary<String, Integer> symTable13 = new MyDictionary<>();
+        MyIList<Integer> out13 = new MyList<>();
+        MyIDictionary <Integer, Pair<String, BufferedReader>> fileTable13 = new MyDictionary<>();
+        MyIHeap <Integer> Heap13 = new MyHeap<>(new HashMap<>());
+        PrgState program13 = new PrgState(exeStack13, symTable13, out13, fileTable13, Heap13, ex13);
+        IRepo repository13 = new Repo(program13, "result.out");
+        Controller ctrl13 = new Controller(repository13);
+
         TextMenu menu = new TextMenu();
         menu.addCommand(new ExitCommand(0, "exit"));
         menu.addCommand(new RunExample(1, ex1.toString(), ctrl1));
@@ -328,6 +356,7 @@ public class Interpreter {
         menu.addCommand(new RunExample(10, ex10.toString(), ctrl10));
         menu.addCommand(new RunExample(11, ex11.toString(), ctrl11));
         menu.addCommand(new RunExample(12, ex12.toString(), ctrl12));
+        menu.addCommand(new RunExample(13, ex13.toString(), ctrl13));
         menu.show();
     }
 }

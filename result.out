@@ -1,6 +1,6 @@
 ExeStack:
-v = 10; 
-new(v, 20) new(a, 22) writeHeap(a, 30) print(a);  print(readHeap(a));  a = 0;      
+v = 6; 
+while (v - 4 != 0) do print(v);  v = v - 1;   end print(v);  
 
 SymTable:
 
@@ -11,10 +11,10 @@ FileTable:
 Heap:
 
 ExeStack:
-new(v, 20) new(a, 22) writeHeap(a, 30) print(a);  print(readHeap(a));  a = 0;      
+while (v - 4 != 0) do print(v);  v = v - 1;   end print(v);  
 
 SymTable:
-v --> 10
+v --> 6
 
 Out:
 
@@ -23,11 +23,11 @@ FileTable:
 Heap:
 
 ExeStack:
-new(v, 20)
-new(a, 22) writeHeap(a, 30) print(a);  print(readHeap(a));  a = 0;     
+while (v - 4 != 0) do print(v);  v = v - 1;   end
+print(v); 
 
 SymTable:
-v --> 10
+v --> 6
 
 Out:
 
@@ -36,146 +36,150 @@ FileTable:
 Heap:
 
 ExeStack:
-new(a, 22) writeHeap(a, 30) print(a);  print(readHeap(a));  a = 0;     
+print(v);  v = v - 1;  
+while (v - 4 != 0) do print(v);  v = v - 1;   end
+print(v); 
 
 SymTable:
-v --> 1
+v --> 6
 
 Out:
 
 FileTable:
 
 Heap:
-1 -> 20
+
 ExeStack:
-new(a, 22)
-writeHeap(a, 30) print(a);  print(readHeap(a));  a = 0;    
+print(v); 
+v = v - 1; 
+while (v - 4 != 0) do print(v);  v = v - 1;   end
+print(v); 
 
 SymTable:
-v --> 1
+v --> 6
 
 Out:
 
 FileTable:
 
 Heap:
-1 -> 20
+
 ExeStack:
-writeHeap(a, 30) print(a);  print(readHeap(a));  a = 0;    
+v = v - 1; 
+while (v - 4 != 0) do print(v);  v = v - 1;   end
+print(v); 
 
 SymTable:
-a --> 2
-v --> 1
+v --> 6
 
 Out:
+6
 
 FileTable:
 
 Heap:
-1 -> 20
-2 -> 22
+
 ExeStack:
-writeHeap(a, 30)
-print(a);  print(readHeap(a));  a = 0;   
+while (v - 4 != 0) do print(v);  v = v - 1;   end
+print(v); 
 
 SymTable:
-a --> 2
-v --> 1
+v --> 5
 
 Out:
+6
 
 FileTable:
 
 Heap:
-1 -> 20
-2 -> 22
+
 ExeStack:
-print(a);  print(readHeap(a));  a = 0;   
+print(v);  v = v - 1;  
+while (v - 4 != 0) do print(v);  v = v - 1;   end
+print(v); 
 
 SymTable:
-a --> 2
-v --> 1
+v --> 5
 
 Out:
+6
 
 FileTable:
 
 Heap:
-1 -> 20
-2 -> 30
+
 ExeStack:
-print(a); 
-print(readHeap(a));  a = 0;  
+print(v); 
+v = v - 1; 
+while (v - 4 != 0) do print(v);  v = v - 1;   end
+print(v); 
 
 SymTable:
-a --> 2
-v --> 1
+v --> 5
 
 Out:
+6
 
 FileTable:
 
 Heap:
-1 -> 20
-2 -> 30
+
 ExeStack:
-print(readHeap(a));  a = 0;  
+v = v - 1; 
+while (v - 4 != 0) do print(v);  v = v - 1;   end
+print(v); 
 
 SymTable:
-a --> 2
-v --> 1
+v --> 5
 
 Out:
-2
+6
+5
 
 FileTable:
 
 Heap:
-1 -> 20
-2 -> 30
+
 ExeStack:
-print(readHeap(a)); 
-a = 0; 
+while (v - 4 != 0) do print(v);  v = v - 1;   end
+print(v); 
 
 SymTable:
-a --> 2
-v --> 1
+v --> 4
 
 Out:
-2
+6
+5
 
 FileTable:
 
 Heap:
-1 -> 20
-2 -> 30
+
 ExeStack:
-a = 0; 
+print(v); 
 
 SymTable:
-a --> 2
-v --> 1
+v --> 4
 
 Out:
-2
-30
+6
+5
 
 FileTable:
 
 Heap:
-1 -> 20
-2 -> 30
+
 ExeStack:
 
 SymTable:
-a --> 0
-v --> 1
+v --> 4
 
 Out:
-2
-30
+6
+5
+4
 
 FileTable:
 
 Heap:
-1 -> 20
+
