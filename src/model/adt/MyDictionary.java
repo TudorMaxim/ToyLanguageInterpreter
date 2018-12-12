@@ -11,6 +11,9 @@ public class MyDictionary <K,V> implements MyIDictionary<K, V> {
     public MyDictionary() {
         D = new HashMap<K,V>();
     }
+    public MyDictionary(Map <K, V> m) {
+        this.D = m;
+    }
     public V get(K key) {
         return D.get(key);
     }
@@ -38,6 +41,12 @@ public class MyDictionary <K,V> implements MyIDictionary<K, V> {
 
     public Map <K,V> getContent() {
         return this.D;
+    }
+
+    public MyIDictionary <K,V> duplicate() {
+        HashMap <K,V> copy = new HashMap<>();
+        copy.putAll(this.D);
+        return  new MyDictionary <K,V> (copy);
     }
     public String toString() {
         return D.entrySet().stream().map(entry -> entry.getKey() + " --> " + entry.getValue() + "\n").reduce("", (acc, entry) -> acc + entry);

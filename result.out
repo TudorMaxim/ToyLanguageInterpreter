@@ -1,185 +1,195 @@
-ExeStack:
-v = 6; 
-while (v - 4 != 0) do print(v);  v = v - 1;   end print(v);  
-
-SymTable:
-
+ID: 1
+Exe Stack:
+v = 10;  new(a, 22) 
+fork(writeHeap(a, 30) v = 32;  print(v);  print(readHeap(a));    ) print(v);  print(readHeap(a));   
+Sym Table_1:
 Out:
-
-FileTable:
-
+File Table:
 Heap:
 
-ExeStack:
-while (v - 4 != 0) do print(v);  v = v - 1;   end print(v);  
-
-SymTable:
-v --> 6
-
+-------------------------------------------------------------------------------------------------------------
+ID: 1
+Exe Stack:
+v = 10; 
+new(a, 22)
+fork(writeHeap(a, 30) v = 32;  print(v);  print(readHeap(a));    ) print(v);  print(readHeap(a));   
+Sym Table_1:
 Out:
-
-FileTable:
-
+File Table:
 Heap:
 
-ExeStack:
-while (v - 4 != 0) do print(v);  v = v - 1;   end
+-------------------------------------------------------------------------------------------------------------
+ID: 1
+Exe Stack:
+new(a, 22)
+fork(writeHeap(a, 30) v = 32;  print(v);  print(readHeap(a));    ) print(v);  print(readHeap(a));   
+Sym Table_1:
+v --> 10
+Out:
+File Table:
+Heap:
+
+-------------------------------------------------------------------------------------------------------------
+ID: 1
+Exe Stack:
+fork(writeHeap(a, 30) v = 32;  print(v);  print(readHeap(a));    ) print(v);  print(readHeap(a));   
+Sym Table_1:
+a --> 1
+v --> 10
+Out:
+File Table:
+Heap:
+1 -> 22
+-------------------------------------------------------------------------------------------------------------
+ID: 1
+Exe Stack:
+fork(writeHeap(a, 30) v = 32;  print(v);  print(readHeap(a));    )
+print(v);  print(readHeap(a));  
+Sym Table_1:
+a --> 1
+v --> 10
+Out:
+File Table:
+Heap:
+1 -> 22
+-------------------------------------------------------------------------------------------------------------
+ID: 1
+Exe Stack:
+print(v);  print(readHeap(a));  
+Sym Table_1:
+a --> 1
+v --> 10
+Out:
+File Table:
+Heap:
+1 -> 22
+-------------------------------------------------------------------------------------------------------------
+ID: 1
+Exe Stack:
 print(v); 
-
-SymTable:
-v --> 6
-
+print(readHeap(a)); 
+Sym Table_1:
+a --> 1
+v --> 10
 Out:
-
-FileTable:
-
+File Table:
 Heap:
-
-ExeStack:
-print(v);  v = v - 1;  
-while (v - 4 != 0) do print(v);  v = v - 1;   end
-print(v); 
-
-SymTable:
-v --> 6
-
+1 -> 22
+-------------------------------------------------------------------------------------------------------------
+ID: 10
+Exe Stack:
+writeHeap(a, 30)
+v = 32;  print(v);  print(readHeap(a));   
+Sym Table_10:
+a --> 1
+v --> 10
 Out:
-
-FileTable:
-
+File Table:
 Heap:
-
-ExeStack:
-print(v); 
-v = v - 1; 
-while (v - 4 != 0) do print(v);  v = v - 1;   end
-print(v); 
-
-SymTable:
-v --> 6
-
+1 -> 22
+-------------------------------------------------------------------------------------------------------------
+ID: 1
+Exe Stack:
+print(readHeap(a)); 
+Sym Table_1:
+a --> 1
+v --> 10
 Out:
-
-FileTable:
-
+10
+File Table:
 Heap:
-
-ExeStack:
-v = v - 1; 
-while (v - 4 != 0) do print(v);  v = v - 1;   end
-print(v); 
-
-SymTable:
-v --> 6
-
+1 -> 22
+-------------------------------------------------------------------------------------------------------------
+ID: 10
+Exe Stack:
+v = 32;  print(v);  print(readHeap(a));   
+Sym Table_10:
+a --> 1
+v --> 10
 Out:
-6
-
-FileTable:
-
+10
+File Table:
 Heap:
-
-ExeStack:
-while (v - 4 != 0) do print(v);  v = v - 1;   end
-print(v); 
-
-SymTable:
-v --> 5
-
+1 -> 30
+-------------------------------------------------------------------------------------------------------------
+ID: 1
+Exe Stack:
+Sym Table_1:
+a --> 1
+v --> 10
 Out:
-6
-
-FileTable:
-
+10
+30
+File Table:
 Heap:
-
-ExeStack:
-print(v);  v = v - 1;  
-while (v - 4 != 0) do print(v);  v = v - 1;   end
-print(v); 
-
-SymTable:
-v --> 5
-
+1 -> 30
+-------------------------------------------------------------------------------------------------------------
+ID: 10
+Exe Stack:
+v = 32; 
+print(v);  print(readHeap(a));  
+Sym Table_10:
+a --> 1
+v --> 10
 Out:
-6
-
-FileTable:
-
+10
+30
+File Table:
 Heap:
-
-ExeStack:
-print(v); 
-v = v - 1; 
-while (v - 4 != 0) do print(v);  v = v - 1;   end
-print(v); 
-
-SymTable:
-v --> 5
-
+1 -> 30
+-------------------------------------------------------------------------------------------------------------
+ID: 10
+Exe Stack:
+print(v);  print(readHeap(a));  
+Sym Table_10:
+a --> 1
+v --> 32
 Out:
-6
-
-FileTable:
-
+10
+30
+File Table:
 Heap:
-
-ExeStack:
-v = v - 1; 
-while (v - 4 != 0) do print(v);  v = v - 1;   end
+1 -> 30
+-------------------------------------------------------------------------------------------------------------
+ID: 10
+Exe Stack:
 print(v); 
-
-SymTable:
-v --> 5
-
+print(readHeap(a)); 
+Sym Table_10:
+a --> 1
+v --> 32
 Out:
-6
-5
-
-FileTable:
-
+10
+30
+File Table:
 Heap:
-
-ExeStack:
-while (v - 4 != 0) do print(v);  v = v - 1;   end
-print(v); 
-
-SymTable:
-v --> 4
-
+1 -> 30
+-------------------------------------------------------------------------------------------------------------
+ID: 10
+Exe Stack:
+print(readHeap(a)); 
+Sym Table_10:
+a --> 1
+v --> 32
 Out:
-6
-5
-
-FileTable:
-
+10
+30
+32
+File Table:
 Heap:
-
-ExeStack:
-print(v); 
-
-SymTable:
-v --> 4
-
+1 -> 30
+-------------------------------------------------------------------------------------------------------------
+ID: 10
+Exe Stack:
+Sym Table_10:
+a --> 1
+v --> 32
 Out:
-6
-5
-
-FileTable:
-
+10
+30
+32
+30
+File Table:
 Heap:
-
-ExeStack:
-
-SymTable:
-v --> 4
-
-Out:
-6
-5
-4
-
-FileTable:
-
-Heap:
-
+1 -> 30
+-------------------------------------------------------------------------------------------------------------

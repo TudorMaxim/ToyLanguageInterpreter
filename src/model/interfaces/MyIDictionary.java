@@ -1,5 +1,7 @@
 package model.interfaces;
 
+import model.adt.MyDictionary;
+
 import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
@@ -13,5 +15,5 @@ public interface MyIDictionary <K, V> {
     int size();
     Map <K,V> getContent();
     void setContent(Map<K, V> map);
-    //MyIDictionary <K,V> duplicate();
+    MyIDictionary <K,V> duplicate();
 }

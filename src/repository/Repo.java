@@ -4,10 +4,11 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Repo implements IRepo{
     private String logFile;
-    private ArrayList <PrgState> prgStates;
+    private List <PrgState> prgStates;
     private PrintWriter printWriter;
     private boolean firstTime;
 
@@ -26,13 +27,21 @@ public class Repo implements IRepo{
         this.logFile = logFile;
     }
 
+    public List <PrgState> getList() {
+        return this.prgStates;
+    }
+
+    public void setList(List <PrgState> list) {
+        this.prgStates = list;
+    }
+
     public void add(PrgState prg) {
         prgStates.add(prg);
     }
 
-    public PrgState getCurrentProgram() {
-        return this.prgStates.get(0);
-    }
+//    public PrgState getCurrentProgram() {
+//        return this.prgStates.get(0);
+//    }
 
 
     @Override
@@ -50,16 +59,8 @@ public class Repo implements IRepo{
             firstTime = false;
         }
         this.printWriter = new PrintWriter(new FileWriter(logFile, true));
-        this.printWriter.println("ExeStack:");
-        this.printWriter.println(state.getExeStack().toString());
-        this.printWriter.println("SymTable:");
-        this.printWriter.println(state.getSymTable().toString());
-        this.printWriter.println("Out:");
-        this.printWriter.println(state.getOut().toString());
-        this.printWriter.println("FileTable:");
-        this.printWriter.println(state.getFileTable().toString());
-        this.printWriter.println("Heap:");
-        this.printWriter.println(state.getHeap().toString());
+        this.printWriter.append(state.toString());
+        this.printWriter.flush();
         this.printWriter.close();
     }
 }

@@ -26,7 +26,7 @@ public class CondStmt implements IStmt {
         } else {
             exeStack.push(Else);
         }
-        return state;
+        return null;
     }
 
 //    public IStmt duplicate() {

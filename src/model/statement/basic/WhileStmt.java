@@ -16,7 +16,7 @@ public class WhileStmt implements IStmt {
     public PrgState execute(PrgState state) throws Exception {
         MyIStack<IStmt> exeStack = state.getExeStack();
         if(condition.eval(state.getSymTable(), state.getHeap()) != 0) {
-            exeStack.push(this);
+            exeStack.push(new WhileStmt(condition, body));
             exeStack.push(body);
         }
         return null;

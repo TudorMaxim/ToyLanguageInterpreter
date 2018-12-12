@@ -7,6 +7,7 @@ import model.statement.basic.*;
 import model.statement.heapManagement.New;
 import model.statement.heapManagement.ReadHeap;
 import model.statement.heapManagement.WriteHeap;
+import model.statement.threading.ForkStmt;
 import model.utilities.Pair;
 import model.PrgState;
 import model.adt.MyDictionary;
@@ -23,6 +24,7 @@ import model.statement.fileManagement.readFile;
 import repository.IRepo;
 import repository.Repo;
 
+import javax.print.DocFlavor;
 import java.io.BufferedReader;
 import java.util.HashMap;
 
@@ -37,7 +39,7 @@ public class Interpreter {
         MyIList<Integer> out1 = new MyList<>();
         MyIDictionary <Integer, Pair<String, BufferedReader>> fileTable1 = new MyDictionary <>();
         MyIHeap<Integer> Heap1 = new MyHeap<>(new HashMap<>());
-        PrgState program1 = new PrgState(exeStack1, symTable1, out1, fileTable1, Heap1, ex1);
+        PrgState program1 = new PrgState(1, exeStack1, symTable1, out1, fileTable1, Heap1, ex1);
         IRepo repository1 = new Repo(program1, "result.out");
         Controller ctrl1 = new Controller(repository1);
 
@@ -61,7 +63,7 @@ public class Interpreter {
         MyIList<Integer> out2 = new MyList<>();
         MyIDictionary <Integer, Pair<String, BufferedReader>> fileTable2 = new MyDictionary <>();
         MyIHeap <Integer> Heap2 = new MyHeap<>(new HashMap<>());
-        PrgState program2 = new PrgState(exeStack2, symTable2, out2, fileTable2, Heap2, ex2);
+        PrgState program2 = new PrgState(1, exeStack2, symTable2, out2, fileTable2, Heap2, ex2);
         IRepo repository2 = new Repo(program2, "result.out");
         Controller ctrl2 = new Controller(repository2);
 
@@ -82,7 +84,7 @@ public class Interpreter {
         MyIList<Integer> out3 = new MyList<>();
         MyIDictionary <Integer, Pair<String, BufferedReader>> fileTable3 = new MyDictionary<>();
         MyIHeap <Integer> Heap3 = new MyHeap<>(new HashMap<>());
-        PrgState program3 = new PrgState(exeStack3, symTable3, out3, fileTable3, Heap3, ex3);
+        PrgState program3 = new PrgState(1, exeStack3, symTable3, out3, fileTable3, Heap3, ex3);
         IRepo repository3 = new Repo(program3, "result.out");
         Controller ctrl3 = new Controller(repository3);
 
@@ -92,7 +94,7 @@ public class Interpreter {
         MyIList<Integer> out4 = new MyList<>();
         MyIDictionary <Integer, Pair<String, BufferedReader>> fileTable4 = new MyDictionary<>();
         MyIHeap <Integer> Heap4 = new MyHeap<>(new HashMap<>());
-        PrgState program4 = new PrgState(exeStack4, symTable4, out4, fileTable4, Heap4, errorNotDefined);
+        PrgState program4 = new PrgState(1, exeStack4, symTable4, out4, fileTable4, Heap4, errorNotDefined);
         IRepo repository4 = new Repo(program4, "result.out");
         Controller ctrl4 = new Controller(repository4);
 
@@ -102,7 +104,7 @@ public class Interpreter {
         MyIList<Integer> out5 = new MyList<>();
         MyIHeap <Integer> Heap5 = new MyHeap<>(new HashMap<>());
         MyIDictionary <Integer, Pair<String, BufferedReader>> fileTable5 = new MyDictionary<>();
-        PrgState program5 = new PrgState(exeStack5, symTable5, out5, fileTable5, Heap5, errorDivByZero);
+        PrgState program5 = new PrgState(1, exeStack5, symTable5, out5, fileTable5, Heap5, errorDivByZero);
         IRepo repository5 = new Repo(program5, "result.out");
         Controller ctrl5 = new Controller(repository5);
 
@@ -139,7 +141,7 @@ public class Interpreter {
         MyIList<Integer> out6 = new MyList<>();
         MyIDictionary <Integer, Pair<String, BufferedReader>> fileTable6 = new MyDictionary<>();
         MyIHeap <Integer> Heap6 = new MyHeap<>(new HashMap<>());
-        PrgState program6 = new PrgState(exeStack6, symTable6, out6, fileTable6, Heap6, ex6);
+        PrgState program6 = new PrgState(1, exeStack6, symTable6, out6, fileTable6, Heap6, ex6);
         IRepo repository6 = new Repo(program6, "result.out");
         Controller ctrl6 = new Controller(repository6);
 
@@ -168,7 +170,7 @@ public class Interpreter {
         MyIList<Integer> out7 = new MyList<>();
         MyIDictionary <Integer, Pair<String, BufferedReader>> fileTable7 = new MyDictionary<>();
         MyIHeap <Integer> Heap7 = new MyHeap<>(new HashMap<>());
-        PrgState program7 = new PrgState(exeStack7, symTable7, out7, fileTable7, Heap7, ex7);
+        PrgState program7 = new PrgState(1, exeStack7, symTable7, out7, fileTable7, Heap7, ex7);
         IRepo repository7 = new Repo(program7, "result.out");
         Controller ctrl7 = new Controller(repository7);
 
@@ -189,7 +191,7 @@ public class Interpreter {
         MyIList<Integer> out8 = new MyList<>();
         MyIDictionary <Integer, Pair<String, BufferedReader>> fileTable8 = new MyDictionary<>();
         MyIHeap <Integer> Heap8 = new MyHeap<>(new HashMap<>());
-        PrgState program8 = new PrgState(exeStack8, symTable8, out8, fileTable8, Heap8, ex8);
+        PrgState program8 = new PrgState(1, exeStack8, symTable8, out8, fileTable8, Heap8, ex8);
         IRepo repository8 = new Repo(program8, "result.out");
         Controller ctrl8 = new Controller(repository8);
 
@@ -212,7 +214,7 @@ public class Interpreter {
         MyIList<Integer> out9 = new MyList<>();
         MyIDictionary <Integer, Pair<String, BufferedReader>> fileTable9 = new MyDictionary<>();
         MyIHeap <Integer> Heap9 = new MyHeap<>(new HashMap<>());
-        PrgState program9 = new PrgState(exeStack9, symTable9, out9, fileTable9, Heap9, ex9);
+        PrgState program9 = new PrgState(1, exeStack9, symTable9, out9, fileTable9, Heap9, ex9);
         IRepo repository9 = new Repo(program9, "result.out");
         Controller ctrl9 = new Controller(repository9);
 
@@ -247,7 +249,7 @@ public class Interpreter {
         MyIList<Integer> out10 = new MyList<>();
         MyIDictionary <Integer, Pair<String, BufferedReader>> fileTable10 = new MyDictionary<>();
         MyIHeap <Integer> Heap10 = new MyHeap<>(new HashMap<>());
-        PrgState program10 = new PrgState(exeStack10, symTable10, out10, fileTable10, Heap10, ex10);
+        PrgState program10 = new PrgState(1, exeStack10, symTable10, out10, fileTable10, Heap10, ex10);
         IRepo repository10 = new Repo(program10, "result.out");
         Controller ctrl10 = new Controller(repository10);
 
@@ -276,7 +278,7 @@ public class Interpreter {
         MyIList<Integer> out11 = new MyList<>();
         MyIDictionary <Integer, Pair<String, BufferedReader>> fileTable11 = new MyDictionary<>();
         MyIHeap <Integer> Heap11 = new MyHeap<>(new HashMap<>());
-        PrgState program11 = new PrgState(exeStack11, symTable11, out11, fileTable11, Heap11, ex11);
+        PrgState program11 = new PrgState(1, exeStack11, symTable11, out11, fileTable11, Heap11, ex11);
         IRepo repository11 = new Repo(program11, "result.out");
         Controller ctrl11 = new Controller(repository11);
 
@@ -308,7 +310,7 @@ public class Interpreter {
         MyIList<Integer> out12 = new MyList<>();
         MyIDictionary <Integer, Pair<String, BufferedReader>> fileTable12 = new MyDictionary<>();
         MyIHeap <Integer> Heap12 = new MyHeap<>(new HashMap<>());
-        PrgState program12 = new PrgState(exeStack12, symTable12, out12, fileTable12, Heap12, ex12);
+        PrgState program12 = new PrgState(1, exeStack12, symTable12, out12, fileTable12, Heap12, ex12);
         IRepo repository12 = new Repo(program12, "result.out");
         Controller ctrl12 = new Controller(repository12);
 
@@ -338,9 +340,48 @@ public class Interpreter {
         MyIList<Integer> out13 = new MyList<>();
         MyIDictionary <Integer, Pair<String, BufferedReader>> fileTable13 = new MyDictionary<>();
         MyIHeap <Integer> Heap13 = new MyHeap<>(new HashMap<>());
-        PrgState program13 = new PrgState(exeStack13, symTable13, out13, fileTable13, Heap13, ex13);
+        PrgState program13 = new PrgState(1, exeStack13, symTable13, out13, fileTable13, Heap13, ex13);
         IRepo repository13 = new Repo(program13, "result.out");
         Controller ctrl13 = new Controller(repository13);
+
+
+
+//        v=10;new(a,22);
+//        fork(wH(a,30);v=32;print(v);print(rH(a)));
+//        print(v);print(rH(a))
+
+        IStmt ex14 = new CompStmt(
+                new CompStmt(
+                        new AssignStmt("v", new ConstExpr(10)),
+                        new New("a", new ConstExpr(22))
+                ),
+                new CompStmt(
+                        new ForkStmt(
+                                new CompStmt(
+                                        new WriteHeap("a", new ConstExpr(30)),
+                                        new CompStmt(
+                                                new AssignStmt("v", new ConstExpr(32)),
+                                                new CompStmt(
+                                                        new PrintStmt(new VarExpr("v")),
+                                                        new PrintStmt(new ReadHeap("a"))
+                                                )
+                                        )
+                                )
+                        ),
+                        new CompStmt(
+                                new PrintStmt(new VarExpr("v")),
+                                new PrintStmt(new ReadHeap("a"))
+                        )
+                )
+        );
+        MyIStack<IStmt> exeStack14 = new MyStack<>();
+        MyIDictionary<String, Integer> symTable14 = new MyDictionary<>();
+        MyIList<Integer> out14 = new MyList<>();
+        MyIDictionary <Integer, Pair<String, BufferedReader>> fileTable14 = new MyDictionary<>();
+        MyIHeap <Integer> Heap14 = new MyHeap<>(new HashMap<>());
+        PrgState program14 = new PrgState(1, exeStack14, symTable14, out14, fileTable14, Heap14, ex14);
+        IRepo repository14 = new Repo(program14, "result.out");
+        Controller ctrl14 = new Controller(repository14);
 
         TextMenu menu = new TextMenu();
         menu.addCommand(new ExitCommand(0, "exit"));
@@ -357,6 +398,7 @@ public class Interpreter {
         menu.addCommand(new RunExample(11, ex11.toString(), ctrl11));
         menu.addCommand(new RunExample(12, ex12.toString(), ctrl12));
         menu.addCommand(new RunExample(13, ex13.toString(), ctrl13));
+        menu.addCommand(new RunExample(14, ex14.toString(), ctrl14));
         menu.show();
     }
 }

@@ -18,7 +18,7 @@ public class AssignStmt implements IStmt {
         MyIDictionary <String, Integer> symTable = state.getSymTable();
         Integer ans = this.expr.eval(symTable, state.getHeap());
         symTable.put(this.name, ans);
-        return state;
+        return null;
     }
 
     public String toString() {
