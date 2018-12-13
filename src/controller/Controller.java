@@ -1,8 +1,8 @@
 package controller;
 import model.PrgState;
+import model.interfaces.MyIDictionary;
 import model.utilities.Pair;
 import repository.IRepo;
-
 import java.io.IOException;
 import java.util.Collection;
 import java.util.List;
@@ -68,17 +68,22 @@ public class Controller {
         List<PrgState> programmesList = removeCompletedPrg(repo.getList());
 
         while (programmesList.size() > 0) {
-            System.out.println(programmesList.size());
             oneStepForAll(programmesList);
-            programmesList.forEach(program ->
-                    program.getHeap().setContent(conservativeGarbageCollector(
-                    program.getSymTable().getContent().values(),
-                    program.getHeap().getContent())));
+
+            //the heap is the same for all programmes and we will use the merged sym table
+            MyIDictionary<String, Integer> mergedSymTable = repo.mergeSymTables();
+            programmesList.get(0).getHeap().setContent(
+                    conservativeGarbageCollector(
+                            mergedSymTable.getContent().values(),
+                            programmesList.get(0).getHeap().getContent())
+            );
+
             programmesList = removeCompletedPrg(repo.getList());
         }
 
         executor.shutdown();
 
+        //here in the repo is at least one programme
         repo.getList().get(0).getFileTable().getValues().stream().map(Pair::getSecond).forEach(bufferedReader -> {
                     try {
                         bufferedReader.close();
